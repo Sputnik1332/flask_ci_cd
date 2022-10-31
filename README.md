@@ -9,10 +9,8 @@
 
 - `git add .`
 
-
-- `git commit -am "initial commit"`
 [после каждого изменения, которое хотим запушить в репу]
-
+- `git commit -am "initial commit"`
 
 - `git push`
 
