@@ -57,7 +57,7 @@ def hello_view(name: str = None):
     return {"message": f"Hello {name}!"}
 
 
-@app.route("/items/<int:item_id>/")
+@app.route("/items/<int:item_id>/", endpoint='get_item')
 def get_item(item_id):
     """
     Get item
