@@ -1,5 +1,8 @@
 # flask_ci_cd
 
+
+`pip install pylint`
+
 ### Подготовка репозитория
 - `git clone https://github.com/Sputnik1332/flask_ci_cd.git`
 
