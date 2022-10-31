@@ -1,6 +1,8 @@
 # flask_ci_cd
 
 
+## Linter
+
 `pip install pylint`
 
 ### Подготовка репозитория
@@ -19,7 +21,9 @@
 
 -----
 
-**GitHub** --> **Actions**:
+### Добавление конфигурации для Actions (Linter)
+
+**GitHub** --> **Actions** [--> New workflow]:
 
 - Выбираем **Pylint** (configure)
 
@@ -31,3 +35,12 @@
 
 
 - `git pull` [локально]
+
+
+## Tests
+
+GitHub --> Actions --> New workflow
+
+- Выбираем **Python application**
+
+
