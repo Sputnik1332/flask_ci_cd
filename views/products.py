@@ -51,6 +51,7 @@ def add_product():
     :return:
     """
     form = CreateProductForm()
+
     if request.method == "GET":
         return render_template("products/add.html", form=form)
 

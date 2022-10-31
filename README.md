@@ -64,6 +64,7 @@ GitHub --> Actions --> New workflow
     @fixture
     def client() -> FlaskClient:
         app.config.update(SERVER_NAME='myserver.org')
+        app.config.update(WTF_CSRF_ENABLED=False)
         with app.test_client() as client:
             with app.app_context():
                 yield client
