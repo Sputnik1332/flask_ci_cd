@@ -1,8 +1,17 @@
-from flask import url_for
+"""
+test main
+"""
+
 import random
+from flask import url_for
 
 
 def test_get_item(client):
+    """
+    Test get_item
+    :param client:
+    :return:
+    """
     random_id = random.randint(1, 100)
     url = url_for('get_item', item_id=random_id)
     # url = f"/items/{random_id}/"

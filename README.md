@@ -10,9 +10,9 @@
 
 - `git add .`
 
-[после каждого изменения, которое хотим запушить в репу]
+[после каждого изменения, которое хотим запушить в репу] \
+[если добавляли новые файлы, то перед этим ещё делаем `git add .`]
 - `git commit -am "initial commit"`
-
 - `git push`
 
 -----
@@ -84,3 +84,8 @@ GitHub --> Actions --> New workflow
         response = client.get(url)
         assert response.status_code == 200
         assert response.json['item']['id'] == random_id
+
+
+- Запускаем тесты (pytest находит во всех каталогах с именем `test*` все файлы с именем `test*` и все функции с именем `test*` внутри)
+
+  `pytest`
